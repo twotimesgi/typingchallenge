@@ -14,6 +14,7 @@ let wpm = document.getElementById("wpm");
 let resetBtn = document.getElementById("reset");
 
 document.addEventListener("keydown", function(e){
+    console.log(e.key);
     if(currentChar < targetText.length){
         if(targetText[currentChar] == " "){
             typed += '<span class="typed">' + targetText[currentChar] + '</span>';
