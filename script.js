@@ -37,7 +37,7 @@ document.addEventListener("keydown", function(e){
                 wpm.innerHTML = "Words per minute: " + ((60 * targetText.match(/(\w+)/g).length) / totalSeconds).toFixed(2) ;
             }
         }else{
-            if (currentChar > 0){
+            if (currentChar > 0 && e.key != " "){
             errors += 1;
             errorsText.innerHTML = "Errors: " + errors;
             }
