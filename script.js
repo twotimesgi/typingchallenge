@@ -14,6 +14,11 @@ let resetBtn = document.getElementById("reset");
 
 document.addEventListener("keydown", function(e){
     if(currentChar < targetText.length){
+        if(targetText[currentChar] == " "){
+            typed += '<span class="typed">' + targetText[currentChar] + '</span>';
+            text.innerHTML = typed + targetText.slice(currentChar+1,targetText.length);
+            currentChar++;
+        }
         if(e.key == targetText[currentChar]){
             if(startingTimestamp == 0){
                 startingTimestamp = Date.now();
