@@ -1,5 +1,5 @@
 let text = document.getElementById("text");
-let targetText = "Lorem ipsum dolor sit amet";
+let targetText = "Lorem ipsum dolor sit amet".toLocaleLowerCase();
 text.innerHTML = targetText;
 let currentChar = 0;
 let typed = "";
