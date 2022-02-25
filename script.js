@@ -1,5 +1,5 @@
 let text = document.getElementById("text");
-let targetText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque malesuada tortor. Suspendisse non dictum nisi. Vestibulum ullamcorper dapibus dictum. Quisque fringilla sollicitudin tortor ut euismod. Cras tincidunt ante at viverra maximus. Phasellus commodo interdum magna, et accumsan odio dictum id. Vestibulum et tincidunt justo. Cras non pellentesque augue. Proin sodales enim at lectus viverra, ut rhoncus eros ornare. Nunc aliquet orci lobortis magna rhoncus, ut tincidunt leo commodo. Nulla eget ante sed nulla varius volutpat vel ut velit.".toLocaleLowerCase();
+let targetText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque malesuada tortor. Suspendisse non dictum nisi. Vestibulum ullamcorper dapibus dictum. Quisque fringilla sollicitudin tortor ut euismod.".toLocaleLowerCase();
 targetText = targetText.replace(/[^\p{L}\p{N}\p{Z}]/gu, '');
 text.innerHTML = targetText;
 let currentChar = 0;
